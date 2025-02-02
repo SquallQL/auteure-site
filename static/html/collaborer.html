@@ -12,13 +12,37 @@
   <div class="page-title">
     <a href="../../main.html"><h1>Alizée Goulet</h1></a>
     <nav class="menu">
-      <a href="./livres.html">Livres</a>
-      <a href="./presse.html">Presse</a>
-      <a href="#">Collaborer</a>
-      <a href="./contact.html">Contact</a>
+      <a class="nav-item" href="./livres.html">Livres</a>
+      <a class="nav-item" href="./presse.html">Presse</a>
+      <a class="nav-item" href="#">Collaborer</a>
     </nav>
   </div>
-  <div class="content">
-    Collaborer
+  <div>
+    <div class="content">
+      <img class="profile-image" src="../images/alizee_goulet_2.jpeg" />
+      <div class="bio">
+        <div>
+          <h2>Travaillons ensemble</h2>
+          <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Ligula proin netus efficitur vulputate bibendum faucibus. Porttitor torquent finibus porta mattis dictum tempus sed. Montes netus senectus elementum pharetra, laoreet consequat orci. Gravida morbi ac a parturient tortor eleifend. Sem facilisis blandit placerat cubilia fusce senectus. Dis sodales potenti senectus torquent, dis venenatis aptent magnis. Laoreet morbi tristique ac metus curae lectus morbi cras magnis. Pretium lectus ligula nunc aliquam; suscipit ex. Vestibulum commodo laoreet blandit ligula turpis neque elementum id.
+        </div>
+        <div>
+          <h2 class="mt-2">Contact</h2>
+          <a href="#" id="mail">
+          Envoyer un courriel
+        </a>
+        <div class="mt-1">
+          <a href="https://www.facebook.com/profile.php?id=691684122"><img class="icon" src="../icons/facebook.svg" /></a>
+          <a href="https://www.instagram.com/alizeegoulet/"><img class="icon" src="../icons/insta.svg" /></a>
+        </div>
+        </div>
+      </div>
+    </div>
   </div>
+
+
+  <script>
+    const m = ['mailto', ':', 'al', 'izee', '_', 'gou', 'let', '@', 'hot', 'mail', '.', 'co', 'm'];
+    const final = m.join('')
+    document.querySelector('#mail').setAttribute('href', final)
+  </script>
 </body>
