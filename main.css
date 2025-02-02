@@ -44,7 +44,7 @@ a:hover{
 
 .icon{
   width: 30px;
-  padding: 0 8px;
+  padding: 0 16px 0 0;
 }
 
 .mt-1{
@@ -89,17 +89,49 @@ a:hover{
   margin-top: 8rem;
 }
 
-.book-row{
-  min-width:1100px;
-  margin-top: 1.5rem;  
-  display: flex;
+@media screen and (min-width: 768px){
+  .book-row{
+    display: flex;
+    min-width:1100px;
+  }
+
+  .image-livre{
+    padding-top: 0!important;
+    padding-right: 50px;
+  }
 }
 
-.content{
+.image-livre{
+  padding-top: 40px;
+  max-width: 300px;
+}
+
+.image-livre:first-child{
+  padding-top:0;
+}
+
+.book-row{
+  margin-top: 1.5rem;  
+}
+
+@media only screen and (max-width: 768px) {
+  .content{
+    display: flex;
+    flex-direction: column;
+  }
+}
+  .content{
   display: flex;
   justify-content: center ;
 
   margin-top: 100px;
+}
+
+@media screen and (min-width: 768px){
+  .bio{
+    margin-left: 10rem;
+    padding-top: 0!important;
+  }
 }
 
 .bio{
@@ -107,7 +139,7 @@ a:hover{
   flex-direction: column;
   justify-content: center;
 
-  margin-left: 10rem;
+  padding-top: 50px;
 
   font-size: 1.3em;
   max-width: 400px;
@@ -126,12 +158,10 @@ a:hover{
   align-items: center;
 }
 
+
+
 .livre{
   display: flex;
   margin-bottom: 24px;
 }
 
-.image-livre{
-  padding-right: 50px;
-  max-width: 300px;
-}
