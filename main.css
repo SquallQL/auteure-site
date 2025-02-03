@@ -174,12 +174,12 @@ a:hover{
     display: flex;
     flex-direction: column;
 
-    margin-top: 8rem;
+    margin-top: 2rem;
 
     font-size: 1.4em;
     color: #b1b1a8;
 
-    gap: 4rem;
+    gap: 8rem;
 
     font-size: 1.7em!important;
     margin-right: 5rem;
