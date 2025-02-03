@@ -23,7 +23,7 @@
       <div class="bio">
         <div>
           <h2>Travaillons ensemble</h2>
-          <ul class="mt-2">
+          <ul class="mt-3">
             <li>- Rédaction : poésie, roman, nouvelle, essai, critique littéraire.</li>
             <li>- Conférences, causeries, tables rondes.</li>
             <li>- Ateliers d'écriture.</li>
@@ -38,6 +38,7 @@
           Envoyer un courriel
         </a>
         <div class="mt-1">
+          <a target="_blank" href="#" id="mail-icon"><img class="icon" src="../static/icons/email.svg" /></a>
           <a target="_blank" href="https://www.facebook.com/profile.php?id=691684122"><img class="icon" src="../static/icons/facebook.svg" /></a>
           <a target="_blank" href="https://www.instagram.com/alizeegoulet/"><img class="icon" src="../static/icons/insta.svg" /></a>
         </div>
@@ -50,6 +51,10 @@
   <script>
     const m = ['mailto', ':', 'al', 'izee', '_', 'gou', 'let', '@', 'hot', 'mail', '.', 'co', 'm'];
     const final = m.join('')
-    document.querySelector('#mail').setAttribute('href', final)
+    const mailEl = document.querySelector('#mail');
+    const mailIconEl = document.querySelector('#mail-icon');
+
+    mailEl.setAttribute('href', final)
+    mailIconEl.setAttribute('href', final)
   </script>
 </body>
