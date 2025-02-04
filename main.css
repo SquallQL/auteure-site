@@ -5,7 +5,7 @@ body{
   color: #1b1d1d;
 
   font-family: "Barlow Semi Condensed", serif;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 h1 {
@@ -136,13 +136,15 @@ li {
   .content{
     display: flex;
     flex-direction: column;
+    margin-top: 100px!important ;
   }
 }
-  .content{
+
+.content{
   display: flex;
   justify-content: center ;
 
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
 @media screen and (min-width: 768px){
@@ -178,7 +180,7 @@ li {
 
 .livre{
   display: flex;
-  margin-bottom: 24px;
+  margin-bottom: 50px;
 }
 
 @media screen and (min-width: 768px) {
